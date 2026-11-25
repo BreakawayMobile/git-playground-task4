@@ -24,7 +24,6 @@ test("search returns nothing when no note contains the term", () => {
   const result = matches(notes, "xyz");
   assert.strictEqual(result.length, 0);
 });
-
 test("edit returns false for an unknown id and does not throw", () => {
   const fs = require("node:fs");
   const path = require("node:path");
